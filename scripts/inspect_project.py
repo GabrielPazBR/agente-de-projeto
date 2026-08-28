@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Inspeciona um workspace sem modificar arquivos."""
 
+# Feito por: https://github.com/GabrielPazBR/
+
 from __future__ import annotations
 
 import argparse

@@ -1,6 +1,6 @@
 interface:
   display_name: "[AGENT] Implantação de agente de projeto by Paz"
-  short_description: "Implanta a base e o perfil do agente"
-  default_prompt: "Use $agente-de-projeto para implantar a base e especializar o agente deste projeto."
+  short_description: "Cria a base persistente de um agente de projeto"
+  default_prompt: "Use $agente-de-projeto para configurar o workspace, implantar a base persistente e definir o perfil funcional do agente deste projeto."
 policy:
   allow_implicit_invocation: false

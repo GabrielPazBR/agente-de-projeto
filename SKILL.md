@@ -1,9 +1,11 @@
 ---
 name: agente-de-projeto
-description: "Implanta ou repara a base local de um agente no início de um projeto, configura memória e ferramentas comuns, define o perfil funcional e gera instruções persistentes do workspace."
+description: "Cria, implanta ou repara um agente de projeto no Codex, com MemPalace local, RTK, servidores MCP, skills, perfil funcional e AGENTS.md persistente. Use na configuração inicial de um workspace ou para diagnosticar uma implantação existente."
 ---
 
 # [AGENT] Implantação de agente de projeto
+
+Feito por: [Gabriel Paz](https://github.com/GabrielPazBR/)
 
 Prepare um workspace para uso recorrente por agentes. Execute a implantação completa uma vez; em reexecuções, inspecione e repare somente componentes ausentes, incompatíveis ou incompletos.
 

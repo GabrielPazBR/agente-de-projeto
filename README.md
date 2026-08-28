@@ -1,10 +1,12 @@
-# Agente de Projeto
+# Agente de Projeto para Codex
 
-Skill para implantar a estrutura comum de um agente no início de um projeto. Ela prepara a base local, registra o estado da implantação e conduz a definição do perfil funcional do agente para aquele workspace.
+Skill em português para criar a base persistente de um agente de projeto no Codex. Automatiza a configuração inicial do workspace, memória local com MemPalace, RTK, servidores MCP, catálogos de skills, `AGENTS.md` e perfil funcional do agente.
+
+> Feito por: [Gabriel Paz](https://github.com/GabrielPazBR/)
 
 Nome exibido no Codex: **[AGENT] Implantação de agente de projeto by Paz**
 
-## O que a skill prepara
+## Implantação automatizada do agente
 
 - MemPalace com palace individual armazenado dentro do projeto;
 - RTK instalado, habilitado e testado;
@@ -17,7 +19,7 @@ Nome exibido no Codex: **[AGENT] Implantação de agente de projeto by Paz**
 
 A skill é executada por solicitação explícita. Depois de uma implantação concluída, novas execuções servem para diagnosticar ou reparar componentes, sem reinstalar toda a estrutura automaticamente.
 
-## Requisitos
+## Requisitos para instalação
 
 - Codex com suporte a skills;
 - Git, Python e acesso à internet durante a instalação dos componentes;
@@ -26,7 +28,7 @@ A skill é executada por solicitação explícita. Depois de uma implantação c
 
 Alguns componentes podem exigir Node.js, navegadores do Playwright ou outras bibliotecas. A própria implantação verifica o ambiente, instala o que estiver ausente dentro do escopo autorizado e informa qualquer ação manual necessária.
 
-## Instalação pelo Codex
+## Instalar a skill no Codex
 
 Peça ao Codex para instalar a skill a partir deste repositório:
 
@@ -39,7 +41,7 @@ O instalador salva a skill em `$CODEX_HOME/skills/agente-de-projeto`. Quando `CO
 
 A skill ficará disponível no turno seguinte do Codex.
 
-## Instalação manual
+## Instalação manual da skill
 
 Clone o repositório dentro do diretório de skills:
 
@@ -68,7 +70,7 @@ git clone https://github.com/GabrielPazBR/agente-de-projeto.git \
 
 Se o Codex já estiver aberto, inicie um novo turno depois da instalação para que a skill seja descoberta.
 
-## Como usar
+## Criar um agente para o projeto
 
 Abra no Codex o projeto que receberá o agente e solicite:
 
@@ -87,7 +89,7 @@ Durante a execução, a skill:
 
 Execute a implantação no diretório do projeto que será configurado. Não a execute no diretório global de skills nem em uma pasta que reúna vários projetos.
 
-## Atualização
+## Atualizar a skill
 
 Em uma instalação feita com Git:
 
@@ -97,7 +99,7 @@ git -C "/caminho/para/agente-de-projeto" pull --ff-only
 
 Se a skill tiver sido instalada pelo `skill-installer`, remova a versão instalada e peça uma nova instalação a partir do repositório. Antes disso, preserve alterações locais que você queira manter.
 
-## Estrutura do repositório
+## Arquivos e funcionamento
 
 ```text
 agente-de-projeto/
@@ -113,6 +115,10 @@ agente-de-projeto/
 - `assets/` contém modelos usados nos arquivos persistentes do projeto.
 - `scripts/` reúne inspeção, atualização e validação determinísticas.
 
-## Escopo
+## Limites da implantação
 
 Esta skill cobre somente a base comum e o perfil funcional do agente. Integrações de negócio, políticas específicas de segredos, fontes externas e permissões próprias de cada projeto devem ser definidas separadamente.
+
+## Autor
+
+Feito por: [Gabriel Paz](https://github.com/GabrielPazBR/)

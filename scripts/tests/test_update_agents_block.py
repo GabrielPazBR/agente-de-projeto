@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+# Feito por: https://github.com/GabrielPazBR/
+
 import importlib.util
 import tempfile
 import unittest

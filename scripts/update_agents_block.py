@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Insere ou atualiza o bloco gerenciado em AGENTS.md sem apagar o restante."""
 
+# Feito por: https://github.com/GabrielPazBR/
+
 from __future__ import annotations
 
 import argparse

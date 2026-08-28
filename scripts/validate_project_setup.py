@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Valida os artefatos persistentes gerados por agente-de-projeto."""
 
+# Feito por: https://github.com/GabrielPazBR/
+
 from __future__ import annotations
 
 import argparse

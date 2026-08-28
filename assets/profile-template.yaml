@@ -1,0 +1,36 @@
+schema_version: 1
+confirmed_by_user: false
+confirmed_at: ""
+project:
+  summary: "__PROJECT_SUMMARY__"
+  intended_outcome: "__INTENDED_OUTCOME__"
+agent:
+  role: "__AGENT_ROLE__"
+  purpose: "__AGENT_PURPOSE__"
+  responsibilities: []
+  out_of_scope: []
+  deliverables: []
+  completion_criteria: []
+domain:
+  canonical_terms: []
+technology:
+  detected: []
+  confirmed: []
+workflow:
+  recurring_tasks: []
+  required_validation: []
+  human_decisions: []
+capabilities:
+  skills_enabled: []
+  mcp_enabled:
+    - "context7"
+    - "playwright"
+    - "gemini"
+  plugins_enabled: []
+knowledge:
+  preferred_sources: []
+  research_expectations: []
+facts: []
+decisions: []
+hypotheses: []
+pending_questions: []

@@ -1,0 +1,16 @@
+schema_version: 1
+generated_at: "__GENERATED_AT__"
+skills: []
+
+# Cada item de skills deve registrar:
+# - name
+# - local_path
+# - source_repository
+# - source_path
+# - revision
+# - imported_at
+# - source_language
+# - installed_language
+# - translation_status
+# - content_hash
+# - validation_status

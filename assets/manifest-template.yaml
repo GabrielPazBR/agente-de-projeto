@@ -1,0 +1,58 @@
+schema_version: 1
+project:
+  name: "__PROJECT_NAME__"
+  root: "__PROJECT_ROOT__"
+bootstrap:
+  skill: "agente-de-projeto"
+  status: "in_progress"
+  mode: "__BOOTSTRAP_MODE__"
+  started_at: "__STARTED_AT__"
+  updated_at: "__UPDATED_AT__"
+environment:
+  os: "__OS__"
+  architecture: "__ARCHITECTURE__"
+  shell: "__SHELL__"
+  agent_client: "__AGENT_CLIENT__"
+components:
+  rtk:
+    source: "https://github.com/rtk-ai/rtk"
+    version: ""
+    status: "pending"
+    evidence: []
+  mempalace:
+    source: "https://github.com/MemPalace/mempalace"
+    version: ""
+    palace_path: ".agent/memory"
+    status: "pending"
+    evidence: []
+  context7:
+    source: "https://github.com/upstash/context7"
+    version: ""
+    mode: "mcp"
+    status: "pending"
+    evidence: []
+  playwright_mcp:
+    source: "https://github.com/microsoft/playwright-mcp"
+    version: ""
+    status: "pending"
+    evidence: []
+  gemini_mcp:
+    source: "https://github.com/jamubc/gemini-mcp-tool"
+    version: ""
+    backend: ""
+    status: "pending"
+    evidence: []
+skill_sources:
+  - repository: "https://github.com/mattpocock/skills"
+    revision: ""
+    status: "pending"
+  - repository: "https://github.com/joshuadavidthomas/agent-skills"
+    revision: ""
+    status: "pending"
+phases:
+  inspection: "pending"
+  base: "pending"
+  specialization: "pending"
+  instructions: "pending"
+  validation: "pending"
+pending_actions: []

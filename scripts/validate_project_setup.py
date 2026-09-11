@@ -23,6 +23,8 @@ ESSENTIAL_AGENTS_POINTERS = (
     ".agent/instructions/gemini.md",
     ".agent/instructions/linguagem-usuario.md",
     "mempalace instructions",
+    "Graphify",
+    "$graphify . --update",
     "RTK",
 )
 
@@ -85,6 +87,8 @@ def main() -> int:
         root / ".agent/instructions/gemini.md",
         root / ".agent/instructions/linguagem-usuario.md",
         root / ".agent/memory",
+        root / ".agents/skills/graphify/SKILL.md",
+        root / "graphify-out/graph.json",
     ]
     for path in required:
         if not path.exists():
@@ -141,7 +145,7 @@ def main() -> int:
         if top_level_mapping_value(manifest, "bootstrap", "status") != "complete":
             issues.append("bootstrap.status no manifesto ainda não é complete")
 
-    for executable in ("rtk", "mempalace", "node", "npx"):
+    for executable in ("rtk", "mempalace", "graphify", "node", "npx"):
         if not shutil.which(executable):
             issues.append(f"executável obrigatório não encontrado no PATH: {executable}")
 

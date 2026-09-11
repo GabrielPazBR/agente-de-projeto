@@ -24,6 +24,7 @@ Verifique:
 - Python, `uv`, Node.js, npm e `npx`;
 - RTK e configuração para o agente atual;
 - MemPalace, palace e skills relacionadas;
+- Graphify CLI, skill no escopo do projeto, `graphify-out/` e estado do grafo;
 - Context7 em modo MCP ou CLI;
 - Playwright MCP, pacote Playwright e navegadores;
 - Gemini MCP Tool, Gemini CLI e `agy`;

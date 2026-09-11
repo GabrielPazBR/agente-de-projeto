@@ -35,7 +35,20 @@ Fonte: `https://github.com/MemPalace/mempalace`.
 
 Configure o agente para consultar a memória antes de decisões dependentes de histórico e registrar fatos, decisões, hipóteses, correções e pendências ao encerrar tarefas.
 
-## 3. Context7
+## 3. Graphify
+
+Fonte: `https://github.com/Graphify-Labs/graphify`.
+
+1. Execute `graphify --version` e confirme que o executável pertence ao pacote oficial `graphifyy` (com dois `y`). Não confunda o nome do pacote com o comando `graphify` nem instale pacotes homônimos.
+2. Se estiver ausente ou inválido, prefira `uv tool install graphifyy`. Reuse `pipx` apenas quando já for o gerenciador isolado adotado no ambiente. Garanta que o diretório de binários esteja no `PATH` persistente do agente.
+3. No diretório raiz do workspace, registre a integração no escopo do projeto com `graphify install --project --platform codex`. Confirme a criação de `.agents/skills/graphify/SKILL.md` e dos recursos referenciados por ela. Preserve uma instalação de projeto válida e não crie cópia global duplicada.
+4. Leia a skill Graphify instalada antes de construir o grafo. Execute `$graphify .` pelo agente para indexar o workspace. Para um repositório que contenha somente código, ou quando não houver backend autorizado para documentos e mídia, use a extração local de código indicada pela versão instalada, como `graphify extract . --code-only`.
+5. Confirme a existência e a leitura de `graphify-out/graph.json`. Execute ao menos uma consulta pertinente ao workspace com `graphify query`, `graphify explain` ou `graphify path` e confira se a resposta cita símbolos e caminhos reais do projeto.
+6. Registre no manifesto a origem, a versão, o método de instalação, o caminho da skill, o caminho do grafo, o modo de extração e a consulta usada como prova.
+
+Não marque este componente como aprovado somente porque o executável, a skill ou `graph.json` existe. Instalação, registro no Codex, indexação e consulta devem funcionar no workspace.
+
+## 4. Context7
 
 Fonte: `https://github.com/upstash/context7`.
 
@@ -45,7 +58,7 @@ Fonte: `https://github.com/upstash/context7`.
 4. Execute uma consulta real sobre uma biblioteca e versão presentes no projeto. Se o projeto ainda não tiver dependências, resolva e consulte uma biblioteca conhecida apenas como prova de diagnóstico e registre que ela não representa uma escolha do projeto.
 5. Registre o ID resolvido, a versão consultada e o resultado.
 
-## 4. Playwright MCP
+## 5. Playwright MCP
 
 Fonte: `https://github.com/microsoft/playwright-mcp`.
 
@@ -56,7 +69,7 @@ Fonte: `https://github.com/microsoft/playwright-mcp`.
 5. Inicie o MCP, confirme o handshake, liste ferramentas, abra uma página neutra ou local e leia sua estrutura.
 6. Encerre navegadores e processos iniciados pelo teste.
 
-## 5. Gemini MCP Tool
+## 6. Gemini MCP Tool
 
 Fonte: `https://github.com/jamubc/gemini-mcp-tool`.
 
@@ -68,7 +81,7 @@ Fonte: `https://github.com/jamubc/gemini-mcp-tool`.
 
 Quando autenticação for necessária, conclua primeiro todas as etapas independentes e então solicite a ação do usuário.
 
-## 6. Catálogos de skills
+## 7. Catálogos de skills
 
 Fontes:
 
@@ -87,4 +100,4 @@ As skills podem ser instaladas no catálogo, mas o perfil funcional deve destaca
 
 ## Critério de conclusão
 
-A base termina quando todos os seis componentes tiverem uma operação real aprovada ou um bloqueio registrado. Só então inicie a entrevista de especialização.
+A base termina quando todos os sete componentes tiverem uma operação real aprovada ou um bloqueio registrado. Só então inicie a entrevista de especialização.

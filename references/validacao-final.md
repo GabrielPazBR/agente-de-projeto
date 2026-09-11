@@ -29,6 +29,14 @@ Corrija campos ausentes, ponteiros quebrados e marcadores duplicados antes de co
 - mineração inicial executada;
 - origem e resultado registrados.
 
+### Graphify
+
+- pacote oficial `graphifyy` e versão identificados;
+- skill registrada em `.agents/skills/graphify/` e descoberta pelo Codex;
+- `graphify-out/graph.json` gerado para o workspace;
+- consulta real retorna símbolos e caminhos existentes;
+- `AGENTS.md` exige uso nas tarefas pertinentes e atualização incremental após modificações.
+
 ### Context7
 
 - servidor acessível;
@@ -77,7 +85,7 @@ Informe:
 - caminho do workspace e do palace;
 - versões instaladas ou reutilizadas;
 - perfil definido;
-- skills, MCPs e políticas habilitados;
+- skills, Graphify, MCPs e políticas habilitados;
 - testes executados e resultados;
 - itens ignorados e motivo;
 - bloqueios e ações necessárias.

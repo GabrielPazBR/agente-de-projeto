@@ -32,6 +32,7 @@ Preencha o modelo com:
 - caminho do manifesto e do perfil;
 - regra de uso do RTK;
 - recall e registro do MemPalace;
+- uso do Graphify para compreender, investigar e localizar código, e atualização incremental depois de qualquer modificação nos arquivos do workspace;
 - gatilhos do Gemini;
 - gatilhos da política de linguagem;
 - política de uploads, quando aplicável;

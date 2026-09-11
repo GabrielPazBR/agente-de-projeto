@@ -1,6 +1,6 @@
 # Agente de Projeto para Codex
 
-Skill em português para criar a base persistente de um agente de projeto no Codex. Automatiza a configuração inicial do workspace, memória local com MemPalace, RTK, servidores MCP, catálogos de skills, `AGENTS.md` e perfil funcional do agente.
+Skill em português para criar a base persistente de um agente de projeto no Codex. Automatiza a configuração inicial do workspace, memória local com MemPalace, Graphify, RTK, servidores MCP, catálogos de skills, `AGENTS.md` e perfil funcional do agente.
 
 > Feito por: [Gabriel Paz](https://github.com/GabrielPazBR/)
 
@@ -10,6 +10,7 @@ Nome exibido no Codex: **[AGENT] Implantação de agente de projeto by Paz**
 
 - MemPalace com palace individual armazenado dentro do projeto;
 - RTK instalado, habilitado e testado;
+- Graphify instalado no ambiente, registrado no projeto, indexado e testado;
 - Context7, Playwright MCP e Gemini MCP Tool;
 - catálogos de skills previstos pela implantação;
 - perfil funcional persistido em `.agent/profile.yaml`;

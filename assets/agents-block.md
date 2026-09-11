@@ -11,6 +11,10 @@ Use RTK nos comandos de terminal suportados. Quando a saída compactada não con
 
 Antes de responder sobre decisões anteriores, consulte o palace deste projeto. Ao encerrar uma tarefa, registre fatos verificados, decisões, comandos úteis, erros, correções, pendências e próximos passos. Obtenha primeiro as instruções atuais com `mempalace instructions <operação>`.
 
+### Graphify
+
+Use a skill Graphify deste workspace para compreender a base de código, investigar fluxos e dependências, localizar arquivos e símbolos, avaliar impacto e responder perguntas cobertas pelo grafo. Prefira consultar o Graphify antes de percorrer o repositório manualmente; complemente com leitura direta quando o grafo não trouxer evidência suficiente. Depois de qualquer modificação nos arquivos do workspace, execute `$graphify . --update` antes de concluir a tarefa e verifique que o grafo foi atualizado.
+
 ### Gemini
 
 Para pesquisa exploratória, revisão de literatura, descoberta de fontes, comparação de ferramentas, análise extensa ou segunda opinião, leia e aplique `.agent/instructions/gemini.md`.

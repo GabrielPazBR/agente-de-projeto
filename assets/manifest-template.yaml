@@ -25,6 +25,16 @@ components:
     palace_path: ".agent/memory"
     status: "pending"
     evidence: []
+  graphify:
+    source: "https://github.com/Graphify-Labs/graphify"
+    package: "graphifyy"
+    version: ""
+    install_method: ""
+    skill_path: ".agents/skills/graphify/SKILL.md"
+    graph_path: "graphify-out/graph.json"
+    extraction_mode: ""
+    status: "pending"
+    evidence: []
   context7:
     source: "https://github.com/upstash/context7"
     version: ""

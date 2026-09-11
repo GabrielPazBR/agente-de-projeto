@@ -36,6 +36,8 @@ class ValidateProjectSetupTests(unittest.TestCase):
             instructions = root / ".agent/instructions"
             instructions.mkdir(parents=True)
             (root / ".agent/memory").mkdir()
+            (root / ".agents/skills/graphify").mkdir(parents=True)
+            (root / "graphify-out").mkdir()
             agents_content = (
                     f"{MODULE.START}\n"
                     ".agent/profile.yaml\n"
@@ -43,6 +45,8 @@ class ValidateProjectSetupTests(unittest.TestCase):
                     ".agent/instructions/gemini.md\n"
                     ".agent/instructions/linguagem-usuario.md\n"
                     "mempalace instructions mine\n"
+                    "Graphify\n"
+                    "$graphify . --update\n"
                     "RTK\n"
                     f"{MODULE.END}\n"
             )
@@ -62,6 +66,13 @@ class ValidateProjectSetupTests(unittest.TestCase):
             (instructions / "gemini.md").write_text("# Gemini\n", encoding="utf-8")
             (instructions / "linguagem-usuario.md").write_text(
                 "# Linguagem\n", encoding="utf-8"
+            )
+            (root / ".agents/skills/graphify/SKILL.md").write_text(
+                "---\nname: graphify\ndescription: Grafo do código.\n---\n",
+                encoding="utf-8",
+            )
+            (root / "graphify-out/graph.json").write_text(
+                "{}\n", encoding="utf-8"
             )
 
             code, output = self.run_validator(root)

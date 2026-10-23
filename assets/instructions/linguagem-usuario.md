@@ -1,94 +1,67 @@
 # Linguagem e texto voltado ao usuário
 
-Aplique esta política a interfaces, mensagens, documentação destinada ao usuário, acessibilidade, notificações, e-mails, metadados e materiais de apresentação. Código, identificadores internos, logs técnicos e documentação para desenvolvedores podem usar a terminologia necessária.
+## Objetivo e escopo
 
-## Princípio
+Escreva para ajudar a pessoa a entender a situação, interpretar a informação e concluir sua tarefa. Cada texto deve ter uma função clara.
 
-Escreva para ajudar o usuário a compreender uma ação, um estado ou uma consequência. Use linguagem direta, concisa, neutra e compatível com o vocabulário do projeto.
+Aplique esta política a interfaces, notificações, mensagens, documentação para usuários, e-mails, apresentações, rótulos acessíveis, mensagens de leitores de tela e metadados. Código, identificadores internos, logs técnicos e documentação para desenvolvedores podem usar a terminologia necessária.
 
-Antes de adicionar um texto, verifique se ele comunica informação necessária. Remova frases, subtítulos, ícones e descrições que apenas repetem o que a interface já demonstra.
+## Princípios
 
-## Redação
+- Comece pela informação ou ação principal. Use palavras comuns, voz ativa e verbos concretos.
+- Prefira frases curtas sem remover precisão ou contexto necessário. Mantenha o mesmo termo para o mesmo conceito no fluxo.
+- Use linguagem direta, neutra e compatível com o público. Empregue termos técnicos quando ajudarem a interpretar a informação ou decidir.
+- Remova slogans, autoelogios, entusiasmo artificial, personificação desnecessária da IA, metáforas vagas, sequências artificiais de adjetivos e promessas absolutas.
+- Remova introduções genéricas, conclusões repetitivas e subtítulos ou dicas que apenas repetem o título, botão ou componente. Crie listas quando a estrutura ajudar a leitura.
+- Substitua afirmações como `100% seguro`, `solução poderosa` ou `simples e intuitivo` por fatos, ações ou resultados verificáveis.
 
-- Comece pela informação ou ação principal.
-- Use frases curtas, voz ativa e verbos concretos.
-- Use o mesmo termo para o mesmo conceito em toda a interface.
-- Preserve o idioma e a variante regional definidos pelo projeto.
-- Respeite traduções existentes e parâmetros explícitos de idioma.
-- Explique termos técnicos somente quando forem necessários para a decisão do usuário.
-- Em instruções, apresente os passos na ordem de execução.
-- Em confirmações, informe o que aconteceu e, quando relevante, o próximo passo.
-- Em erros, informe o problema, seu efeito e uma ação possível sem culpar o usuário.
-- Em estados vazios, explique o que está ausente e apresente uma ação quando ela existir.
-- Use verbos objetivos em botões, como `Salvar`, `Importar`, `Excluir` e `Tentar novamente`.
-- Use substantivos ou expressões curtas em labels, como `Nome do projeto` e `Data de início`.
+## Função de cada texto
 
-## Evitar aparência de texto gerado
+- **Título:** identifica o conteúdo ou a etapa.
+- **Botão:** descreve a ação ou seu resultado, com um verbo específico, como `Salvar`, `Importar` ou `Excluir arquivo`.
+- **Rótulo:** identifica o campo ou controle; mantenha instruções e exemplos na ajuda quando necessários.
+- **Ajuda:** esclarece uma dúvida necessária para agir. Apresente passos na ordem de execução.
+- **Confirmação:** informa o que ocorreu de fato e, quando relevante, o próximo passo. Diferencie solicitação recebida, processamento e conclusão.
+- **Estado vazio, parcial, desatualizado ou de erro:** informa o que aconteceu, o efeito na tarefa e a ação disponível. Mostre apenas as partes necessárias, sem culpar a pessoa nem inserir desculpas automáticas.
+- **Ação com consequências relevantes:** apresente o efeito antes da decisão, no ponto em que ajuda a escolher. Mantenha o botão conciso e use texto de apoio quando necessário. Não acrescente diálogos de confirmação a ações rotineiras apenas por causa desta política.
 
-Evite:
+## Verdade e contexto
 
-- introduções genéricas antes do conteúdo solicitado;
-- conclusões que apenas repetem o conteúdo anterior;
-- explicações sobre decisões evidentes na própria interface;
-- frases promocionais sem informação verificável;
-- linguagem excessivamente entusiasmada;
-- personificação desnecessária do sistema ou da IA;
-- metáforas vagas para ações comuns;
-- sequências artificiais de adjetivos;
-- títulos seguidos por subtítulos que repetem a mesma ideia;
-- listas criadas apenas para fragmentar uma mensagem curta;
-- pedidos de desculpas automáticos em erros rotineiros;
-- afirmações absolutas sobre qualidade, segurança, desempenho ou disponibilidade.
+- Diferencie falha, ausência de dados, valor zero e dado parcial. Não substitua silenciosamente uma falha por zero ou estado vazio.
+- Preserve horários, fuso quando necessário, unidades, limites e critérios de cálculo que afetem a interpretação. Identifique dados desatualizados ou parciais quando isso alterar sua leitura.
+- Não invente resultados, garantias, causas de erro ou ações indisponíveis. Se a causa for desconhecida, descreva o problema observado.
+- Informe destino de arquivos, persistência, privacidade e segurança quando esses fatos alterarem a decisão da pessoa. Descreva somente comportamento comprovado, sem promessas amplas ou explicações defensivas.
+- Traduza erros técnicos para o problema da tarefa. Mantenha códigos e detalhes de diagnóstico em área secundária quando forem úteis ao suporte.
+- Ofereça recuperação ou nova tentativa somente quando a ação existir e for adequada ao estado atual.
 
-Não use expressões como `experiência incrível`, `solução poderosa`, `resultado inteligente`, `processo revolucionário`, `ultra-rápido`, `simples e intuitivo`, `leve seu projeto ao próximo nível`, `desbloqueie todo o potencial`, `100% seguro` ou `totalmente garantido`. Substitua por fatos, ações ou resultados verificáveis.
+## Preferências editoriais e restrições do ambiente
 
-## Terminologia
+Concisão e estilo não justificam omitir informação necessária. Preferências editoriais admitem adaptação ao público e ao contexto; restrições explícitas do proprietário continuam obrigatórias.
 
-Em textos apresentados ao usuário:
+Neste ambiente, em textos voltados ao usuário e suas traduções:
 
-- não use `operacional`, `operativo`, `tático` ou `tática`;
-- evite jargões arquiteturais como `Client-Side`, `Serverless`, `Worker Thread` e `Local Processing`, salvo quando o público precisar deles;
-- não acrescente traduções técnicas entre parênteses sem necessidade;
-- preserve nomes oficiais de produtos, bibliotecas, comandos e formatos;
-- não altere identificadores técnicos por motivos de estilo.
+- Não use `operacional`, `operativo`, `tático` ou `tática`. Descreva o estado ou a ação concreta, como `Disponível`, `Ativo` ou `Não foi possível carregar os dados`, somente quando corresponder aos fatos.
+- Não use travessão longo. Prefira frases independentes, ponto, dois-pontos ou vírgula; quando necessário, use hífen com espaços.
+- Evite jargões arquiteturais como `Client-Side`, `Serverless`, `Worker Thread` e `Local Processing` quando não ajudarem o público. Não acrescente traduções técnicas entre parênteses sem necessidade.
+- Preserve nomes oficiais de produtos, bibliotecas, comandos e formatos. Não renomeie identificadores técnicos internos por estilo.
+- Evite exclamações rotineiras e títulos inteiramente em maiúsculas. Use negrito quando facilitar a localização de informação e nunca use emojis como substitutos dela.
 
-## Pontuação e formatação
+## Acessibilidade e idiomas
 
-- Não use travessão longo.
-- Para separar ideias, use ponto, dois-pontos, vírgula ou hífen com espaços.
-- Evite exclamações em mensagens rotineiras.
-- Evite títulos inteiramente em maiúsculas.
-- Não use emojis como substitutos de informação.
-- Use negrito apenas quando facilitar a localização de informação importante.
-- Não transforme prosa simples em vários níveis de títulos ou listas.
+- Garanta nomes acessíveis específicos para controles e associação entre campos, rótulos e mensagens de erro.
+- O texto deve fazer sentido sem depender apenas de cor, posição ou ícone. Identifique a ação pelo nome do controle.
+- Mensagens dinâmicas relevantes devem ser perceptíveis por tecnologia assistiva sem anúncios redundantes ou perda indevida de foco.
+- Descreva a finalidade de imagens funcionais; evite texto alternativo redundante e mantenha imagens decorativas fora da navegação assistiva.
+- Preserve idioma e variante regional do projeto. Mantenha significado, ação e precisão equivalentes em todos os idiomas, incluindo estados, fallbacks e metadados.
+- Revise traduções na interface real; ajuste a redação e a quebra de linhas sem perder significado. Evite limites arbitrários de palavras que prejudiquem clareza.
 
-## Segurança e privacidade na interface
+## Revisão antes da entrega
 
-Apresente informações sobre segurança ou privacidade somente quando elas alterarem a decisão ou o comportamento do usuário. Descreva comportamentos concretos e verificáveis, sem promessas amplas como `Seus dados estão 100% seguros` ou `Processamento completamente privado`.
+1. Que decisão, ação ou interpretação cada texto ajuda a realizar? Há repetição, promessa não comprovada ou explicação técnica desnecessária?
+2. O texto corresponde ao estado real? Distingue erro, vazio, zero, processamento, parcial e desatualização quando aplicável?
+3. Preserva detalhes necessários para interpretar dados e consequências, incluindo horários, unidades e limites?
+4. Termos, tom, idioma e variante regional são consistentes? As traduções preservam ação e precisão?
+5. No fluxo alterado, o texto funciona com teclado, leitor de tela e telas pequenas, com foco visível, contraste e legibilidade nos temas suportados?
+6. Os estados dinâmicos, fallbacks, erros e rótulos acessíveis seguem os mesmos critérios? Ações oferecidas existem e funcionam?
 
-## Acessibilidade
-
-Todo texto de interface deve:
-
-- possuir nomes acessíveis claros;
-- fazer sentido sem depender apenas de cor, posição ou ícone;
-- identificar campos, erros e ações de forma específica;
-- manter legibilidade em temas claro e escuro;
-- evitar textos alternativos redundantes;
-- descrever a finalidade de imagens funcionais;
-- deixar imagens decorativas fora da navegação assistiva.
-
-Ao modificar uma interface, verifique contraste, foco visível, ordem de navegação e associação entre labels, campos e mensagens de erro.
-
-## Revisão
-
-Antes de concluir, confirme:
-
-1. A informação ajuda o usuário a agir ou compreender o estado atual.
-2. O texto não repete elementos próximos.
-3. Os termos são consistentes com o projeto.
-4. Não há superlativos, autoelogios ou promessas absolutas.
-5. Não há jargão desnecessário.
-6. Erros indicam uma ação possível quando ela existir.
-7. O texto continua compreensível fora do contexto visual imediato.
-8. A redação respeita o idioma e o tom definidos para o projeto.
+Verifique esses pontos na interface renderizada quando houver interface executável. Inspeção do texto não comprova comportamento com teclado ou leitor de tela; registre o que foi testado e qualquer limitação sem declarar validações não executadas.

@@ -53,9 +53,7 @@ Corrija campos ausentes, ponteiros quebrados e marcadores duplicados antes de co
 
 ### Gemini MCP Tool
 
-- servidor acessível;
-- backend identificado;
-- solicitação curta respondida.
+Execute todas as [provas do adaptador Antigravity](gemini-antigravity.md#provas-obrigatórias), incluindo regressão, erros, timeout, ajuda sem Gemini e duas consultas reais pelo MCP. Confira o backend, a entrada local versionada quando houver patch, o rollback e a preferência por `high` nas instruções geradas. Registre modelo solicitado separadamente do confirmado; limitações mantêm o componente parcial.
 
 ### Skills
 
@@ -91,3 +89,7 @@ Informe:
 - bloqueios e ações necessárias.
 
 Uma autenticação pendente, handshake não testado ou persistência não comprovada mantém a implantação parcial.
+
+## Texto voltado ao usuário
+
+Confirme que `.agent/instructions/linguagem-usuario.md` contém a política atual e que o bloco de `AGENTS.md` aponta para sua leitura. Em reparos, atualize o conteúdo gerenciado sem apagar regras próprias do projeto. Ao entregar interface alterada, aplique a revisão dessa política ao fluxo e aos estados afetados; registre provas reais e limitações de acessibilidade, idiomas e estados não exercitados.

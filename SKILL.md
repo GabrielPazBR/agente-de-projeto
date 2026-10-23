@@ -18,6 +18,10 @@ Prepare um workspace para uso recorrente por agentes. Execute a implantação co
 - Registre versões e resultados observados. Não trate presença de arquivo ou término sem erro como prova suficiente.
 - Use versões identificadas e preserve lockfiles. Não faça atualizações principais sem uma necessidade confirmada.
 
+## Gemini MCP com Antigravity
+
+Na instalação, atualização ou reparo do Gemini MCP, aplique o procedimento [de adaptação e testes](references/gemini-antigravity.md) antes de aprovar o componente. Ele exige seleção real de modelo, esforço opcional, preferência por `high` suportado, ajuda do backend correto e instalação recuperável.
+
 ## Estado da implantação
 
 Use `.agent/manifest.yaml` como registro da implantação.

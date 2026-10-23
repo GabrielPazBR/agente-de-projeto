@@ -6,6 +6,14 @@ Skill em português para criar a base persistente de um agente de projeto no Cod
 
 Nome exibido no Codex: **[AGENT] Implantação de agente de projeto by Paz**
 
+## Versão 1.2.0
+
+- Instalação e reparo do Gemini MCP com Antigravity: seleção de modelo, esforço opcional com preferência por `high` suportado, ajuda do backend e tratamento de respostas e erros.
+- Procedimento para adaptar o MCP quando necessário, com cópia local versionada, rollback e testes antes de aprovar a implantação.
+- Política de texto revisada para estados, consequências, precisão dos dados, traduções e acessibilidade.
+
+Os procedimentos são aplicados pela skill no projeto de destino. Instalar esta versão da skill não altera automaticamente um MCP ou projeto já configurado.
+
 ## Implantação automatizada do agente
 
 - MemPalace com palace individual armazenado dentro do projeto;

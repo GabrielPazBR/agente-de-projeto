@@ -71,15 +71,9 @@ Fonte: `https://github.com/microsoft/playwright-mcp`.
 
 ## 6. Gemini MCP Tool
 
-Fonte: `https://github.com/jamubc/gemini-mcp-tool`.
+Ao instalar, atualizar ou reparar o servidor, leia e execute [Gemini MCP com Antigravity](gemini-antigravity.md). A correção do adaptador, configuração recuperável e provas fazem parte desta fase; atualizar apenas pelo npm ou obter uma resposta curta não encerra o componente.
 
-1. Verifique a documentação atual e detecte os backends disponíveis, incluindo Gemini CLI e `agy`.
-2. Instale o servidor e os requisitos oficiais que estiverem ausentes.
-3. Selecione explicitamente o backend compatível com a conta e o ambiente.
-4. Execute uma solicitação curta, confirme a resposta e registre backend e versão.
-5. Trate o resultado como apoio exploratório. O parâmetro `sandbox` do backend `agy` não comprova isolamento.
-
-Quando autenticação for necessária, conclua primeiro todas as etapas independentes e então solicite a ação do usuário.
+Quando autenticação for necessária, conclua primeiro as etapas independentes e solicite a ação do usuário no ponto exato.
 
 ## 7. Catálogos de skills
 

@@ -36,3 +36,7 @@ ou DOI, tipo de fonte, contribuição, aplicação possível e limitações.
 Não invente referências. Marque como não confirmado o que não puder ser
 verificado na fonte original.
 ```
+
+## Modelo e esforço
+
+Prefira `effort: high` nas consultas quando o CLI e o modelo oferecerem suporte. A escolha explícita do usuário prevalece. Consulte os modelos disponíveis pela conta; se o esforço fizer parte do slug, prefira a variante `high` ao escolher um modelo. Preserve um modelo explicitamente solicitado e evite combinar slug e esforço incompatíveis. Sem modelo solicitado, preserve o padrão do CLI. Não fixe Gemini 2.5 nem restrinja a Flash. Se `high` estiver indisponível, informe a limitação; não declare esforço ou modelo confirmado sem evidência do CLI. Modelo ou esforço explícito inválido deve retornar erro, sem substituição silenciosa.

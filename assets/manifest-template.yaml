@@ -50,6 +50,17 @@ components:
     source: "https://github.com/jamubc/gemini-mcp-tool"
     version: ""
     backend: ""
+    cli_version: ""
+    adapter_path: ""
+    adapter_revision: ""
+    available_models: []
+    supported_efforts: []
+    preferred_effort: "high"
+    requested_model: ""
+    confirmed_model: ""
+    requested_effort: ""
+    confirmed_effort: ""
+    rollback_command: ""
     status: "pending"
     evidence: []
 skill_sources:

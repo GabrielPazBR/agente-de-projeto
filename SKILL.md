@@ -22,6 +22,10 @@ Prepare um workspace para uso recorrente por agentes. Execute a implantação co
 
 Na instalação, atualização ou reparo do Gemini MCP, aplique o procedimento [de adaptação e testes](references/gemini-antigravity.md) antes de aprovar o componente. Ele exige seleção real de modelo, esforço opcional, preferência por `high` suportado, ajuda do backend correto e instalação recuperável.
 
+## Navegadores durante a implantação
+
+Ao usar Chromium/Chrome ou Playwright CLI, MCP ou programático/interativo, aplique a política de **Encerramento de navegadores de agentes** de [assets/agents-block.md](assets/agents-block.md). Ela vale para o agente e seus subagentes durante a implantação e deve integrar o `AGENTS.md` gerado. Confirme o fechamento das sessões próprias antes de entregar.
+
 ## Estado da implantação
 
 Use `.agent/manifest.yaml` como registro da implantação.

@@ -6,7 +6,13 @@ Skill em português para criar a base persistente de um agente de projeto no Cod
 
 Nome exibido no Codex: **[AGENT] Implantação de agente de projeto by Paz**
 
-## Versão 1.2.0
+## Versão 1.2.1
+
+- Encerramento obrigatório e verificado de navegadores de agentes e subagentes após o uso, inclusive em falhas e interrupções controladas.
+- Sessões exclusivas por tarefa, preservação de sessões de terceiros e recuperação pelo coordenador de recursos de subagentes interrompidos.
+- Regra incorporada ao modelo de `AGENTS.md` e à validação final. Projetos já implantados precisam reaplicar o bloco gerenciado para receber a atualização.
+
+### Histórico 1.2.0
 
 - Instalação e reparo do Gemini MCP com Antigravity: seleção de modelo, esforço opcional com preferência por `high` suportado, ajuda do backend e tratamento de respostas e erros.
 - Procedimento para adaptar o MCP quando necessário, com cópia local versionada, rollback e testes antes de aprovar a implantação.

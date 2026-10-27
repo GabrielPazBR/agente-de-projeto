@@ -37,10 +37,11 @@ Preencha o modelo com:
 - gatilhos da política de linguagem;
 - política de uploads, quando aplicável;
 - skills e MCPs ativos no perfil;
+- política de encerramento de navegadores do modelo, aplicável a agentes e subagentes em CLI, MCP e uso programático/interativo;
 - critérios gerais de conclusão do agente.
 
 Use instruções positivas e verificáveis. Remova frases que apenas descrevam capacidades já evidentes no ambiente.
 
 ## Critério de conclusão
 
-O `AGENTS.md` termina quando o bloco está presente uma única vez, todos os ponteiros resolvem para arquivos existentes e as instruções correspondem ao perfil confirmado.
+O `AGENTS.md` termina quando o bloco está presente uma única vez, todos os ponteiros resolvem para arquivos existentes e as instruções correspondem ao perfil confirmado. Confirme que a seção de encerramento de navegadores foi preservada também em reparos de implantações existentes.

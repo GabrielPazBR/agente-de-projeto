@@ -49,7 +49,10 @@ Corrija campos ausentes, ponteiros quebrados e marcadores duplicados antes de co
 - ferramentas listadas;
 - navegador iniciado;
 - página inspecionada;
-- processos iniciados no teste encerrados.
+- sessões e processos de navegador iniciados no teste encerrados, com resultado do fechamento e ausência dos processos próprios verificados;
+- seção de encerramento de navegadores presente no bloco gerenciado de `AGENTS.md`, cobrindo subagentes, falhas e preservação de sessões de terceiros.
+
+Aplique a política de **Encerramento de navegadores de agentes** de `assets/agents-block.md` durante toda a implantação, inclusive em testes falhos. Registre no manifesto qualquer recurso próprio que não tenha encerrado; não declare a validação do Playwright aprovada enquanto houver navegador de teste deixado aberto sem pedido explícito do usuário.
 
 ### Gemini MCP Tool
 
